@@ -1,0 +1,93 @@
+/* Базові стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Світло-блакитний фон */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Контейнер розтягнутий на ширину */
+.container {
+    width: 90%; /* Майже на весь екран */
+    max-width: 1200px; /* Максимальна ширина для великих екранів */
+    margin: 20px auto;
+    background-color: #ffffff; /* Білий фон контейнера */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Тінь для гарного вигляду */
+    padding: 40px;
+    text-align: left; /* Текст вирівняний по лівому краю */
+}
+
+/* Заголовки */
+h1 {
+    text-align: center;
+    color: #01579b;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0288d1;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Текст */
+p, ul, li {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+/* Посилання */
+a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #01579b;
+}
+
+/* Пре-форматування (код) */
+pre {
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-left: 5px solid #0288d1;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Тіні для всіх елементів */
+h1, h2, button, a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Трохи більше на мобільних */
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
+code{
+        font-size: 18px;
+}
