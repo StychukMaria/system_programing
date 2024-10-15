@@ -1,0 +1,122 @@
+/* Базові стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Світло-блакитний фон */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background-color: #ffffff; /* Білий фон контейнера */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Більш професійна тінь */
+    padding: 40px;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Заголовки */
+h1 {
+    color: #01579b; /* Глибокий синій для заголовків */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0288d1;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Текст */
+p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Кнопки */
+button {
+    background-color: #4fc3f7; /* Блакитний колір кнопок */
+    color: white;
+    border: none;
+    border-radius: 25px; /* Заокруглені краї кнопок */
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s; /* Додаємо анімацію */
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0288d1; /* Темніший блакитний на ховер */
+    transform: scale(1.05); /* Легке збільшення при наведенні */
+}
+
+/* Центрування кнопок */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Відстань між кнопками */
+    margin-top: 30px;
+}
+
+/* Посилання */
+a {
+    color: #0288d1;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #01579b;
+}
+
+/* Пре-форматування (код) */
+pre {
+    background-color: #e1f5fe;
+    padding: 20px;
+    border-left: 5px solid #0288d1;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* Тіні для всіх елементів */
+h1, h2, button, a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Медіа-запити для мобільних пристроїв */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 12px 25px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .buttons-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
